@@ -25,8 +25,8 @@ found a the end of this file or in the accompanying readme.txt.
 ; ##########################################################################
 ; ----- Basic informations
 !define AUTHOR 		"Andrew Redd"		; your name
-!define APP 		"R-2.6.0"		; insert application name, e.g. "TestApp"
-!define VER 		"2.6.0.0"	; insert version of launcher
+!define APP 		"R-2.6.2"		; insert application name, e.g. "TestApp"
+!define VER 		"2.6.2.0"	; insert version of launcher
 !define EXE 		"bin\Rgui.exe"		; insert program exe name, e.g. "testapp.exe"
 !define EXEPARMS 	"--no-site-file --no-init-file"		; insert some default Parameters 
 
