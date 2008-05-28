@@ -1,0 +1,3 @@
+These are the set by step instruction to creating a portable apps compatible version of R-Portable
+1.	Check out source code
+2.	Compile R-Portable.nsi with nullsoft installer
