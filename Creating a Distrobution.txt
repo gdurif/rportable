@@ -1,3 +1,34 @@
 These are the set by step instruction to creating a portable apps compatible version of R-Portable
 1.	Check out source code
-2.	Compile R-Portable.nsi with nullsoft installer
+2.	Edit R-Portable.nsi to reflect the current version of R.
+3.	Compile R-Portable.nsi with nullsoft installer
+	required plugins for NSIS
+	- NewAdvSplash
+	- Registry
+	- FindProc
+	- Dialogs
+4. Create the R-Portable Folder and sub folders:
+	R-Portable\App
+	R-Portable\App\R-2.*.*
+	R-Portable\Data
+	R-Portable\Data\library
+	R-Portable\Other
+	R-Portable\Other\RPortable Source
+5. Place compiled R-portable.exe and R-portable.ini into R-portable\ folder
+6. Place Rportable.nsi and R.ico into R-Portable\Other\RPortable Source
+7. Edit R-portable.ini where *.* is replaced with the minor and maintance build version for the R-portable system.
+	ProgramDirectory=App\R-2.*.*
+8. Run R-2.*.* installer
+	* install to ...\R-Portable\App\R-2.7.1
+	* Minimal Installation
+	* Accept startup defaults
+	* Don't Create a start menu folder
+	* No Icons or Version Number In Registry or Associating files
+9. Copy Rprofile.site to ...\R-Portable\App\R-2.*.*\etc
+10. run R from the newly installed location.
+	use:  installed.packages(priority="recommended")[,'LibPath',drop=F]
+	to identify recomended packages and move them to the library in the data directory or delete them altogether.
+11. Open folder in 7 zip and create a self extracting archive by checking  'Create SFX archive' andding .paf before .exe.
+	This should create R-portable.paf.exe
+
+	

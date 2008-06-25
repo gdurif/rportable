@@ -1,9 +1,9 @@
 /**************************************************************************
-Name: ...Portable 
+Name: R-Portable 
 
-Version:
+Version: 2.7.1
 
-Website:
+Website: www.stat.tamu.edu/~aredd
 
 Written for:
 	NSIS 2.17 or higher (last tested with 2.28)
@@ -25,8 +25,8 @@ found a the end of this file or in the accompanying readme.txt.
 ; ##########################################################################
 ; ----- Basic informations
 !define AUTHOR 		"Andrew Redd"		; your name
-!define APP 		"R-2.6.2"		; insert application name, e.g. "TestApp"
-!define VER 		"2.6.2.0"	; insert version of launcher
+!define APP 		"R-2.7.1"		; insert application name, e.g. "TestApp"
+!define VER 		"2.7.1.0"	; insert version of launcher
 !define EXE 		"bin\Rgui.exe"		; insert program exe name, e.g. "testapp.exe"
 !define EXEPARMS 	"--no-site-file --no-init-file"		; insert some default Parameters 
 
