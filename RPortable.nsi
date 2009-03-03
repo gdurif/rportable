@@ -23,7 +23,7 @@ found a the end of this file or in the accompanying readme.txt.
 ; ##########################################################################
 ; ----- Basic informations
 !define AUTHOR 		"Andrew Redd"		; your name
-!define RVER 		"2.8.1"	; insert version of launcher
+;!define RVER 		"2.8.1"	; insert version of launcher
 !define VER 		"${RVER}.0"	; insert version of launcher
 !define APP 		"R-${RVER}"		; insert application name, e.g. "TestApp"
 !define EXE 		"bin\Rgui.exe"		; insert program exe name, e.g. "testapp.exe"

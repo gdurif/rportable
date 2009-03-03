@@ -19,7 +19,7 @@ These are the set by step instruction to creating a portable apps compatible ver
 7. Edit R-portable.ini where *.* is replaced with the minor and maintance build version for the R-portable system.
 	ProgramDirectory=App\R-2.*.*
 8. Run R-2.*.* installer
-	* install to ...\R-Portable\App\R-2.7.1
+	* install to ...\R-Portable\App\R-2.*.*
 	* Minimal Installation
 	* Accept startup defaults
 	* Don't Create a start menu folder

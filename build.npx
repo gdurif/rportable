@@ -1,0 +1,23 @@
+// build.npx
+// Make R-Portable Distribution.
+// NppExec build script.
+cd $(CURRENT_DIRECTORY) 
+set Rversion = 2.8.1
+makensis /V2 /DRVER=$(Rversion) "$(CURRENT_DIRECTORY)\RPortable.nsi"
+mkdir "R-Portable"
+mkdir "R-Portable\App"
+mkdir "R-PortableApp\R-$(Rversion)"
+mkdir "R-Portable\Data"
+mkdir "R-Portable\Data\library"
+mkdir "R-Portable\Other"
+mkdir "R-Portable\Other\RPortable Source"
+// move/copy files
+mv R-portable.exe R-portable\R-portable.exe
+CP R-portable.ini R-portable\R-portable.ini
+CP Rportable.nsi "R-Portable\Other\RPortable Source\Rportable.nsi"
+CP R.ico "R-Portable\Other\RPortable Source\R.ico"
+//install R
+R-$(Rversion)-win32.exe /SILENT /LOADINF="Rinf.ini" /LANG=en /DIR="$(CURRENT_DIRECTORY)\R-Portable\App\R-$(Rversion)" /NOICONS /COMPONENTS="main,chtml,trans"
+
+CP -f Rprofile.site .\R-Portable\App\R-$(Rversion)\etc\Rprofile.site 
+$(SYS.PROGRAMFILES)\7-zip\7z.exe a -sfx7z.sfx -mx9 R-Portable_R-$(Rversion).paf.exe R-portable
