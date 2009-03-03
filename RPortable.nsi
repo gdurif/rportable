@@ -1,8 +1,6 @@
 /**************************************************************************
 Name: R-Portable 
 
-Version: 2.7.1
-
 Website: www.stat.tamu.edu/~aredd
 
 Written for:
@@ -10,7 +8,7 @@ Written for:
 	Required plugins: NewAdvSplash, Registry, FindProcDLL
 
 License:
-	Copyright© 2007 by
+	Copyright© 2007
 
 More informations about installation, directory structure etc. could be found
 at the very end of this file or in the accompanying readme.txt
@@ -25,8 +23,9 @@ found a the end of this file or in the accompanying readme.txt.
 ; ##########################################################################
 ; ----- Basic informations
 !define AUTHOR 		"Andrew Redd"		; your name
-!define APP 		"R-2.7.1"		; insert application name, e.g. "TestApp"
-!define VER 		"2.7.1.0"	; insert version of launcher
+!define RVER 		"2.8.1"	; insert version of launcher
+!define VER 		"${RVER}.0"	; insert version of launcher
+!define APP 		"R-${RVER}"		; insert application name, e.g. "TestApp"
 !define EXE 		"bin\Rgui.exe"		; insert program exe name, e.g. "testapp.exe"
 !define EXEPARMS 	"--no-site-file --no-init-file"		; insert some default Parameters 
 
