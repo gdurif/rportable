@@ -1,12 +1,17 @@
 // build.npx
 // Make R-Portable Distribution.
 // NppExec build script.
+// REQUIRES:
+// NSIS http://nsis.sf.net
+// NSIS Registry package http://nsis.sourceforge.net/Registry_plug-in
+// NSIS Dialogs http://nsis.sourceforge.net/Dialogs_plug-in
+// NSIS FindProcDLL http://nsis.sourceforge.net/FindProcDLL_plug-in
 cd $(CURRENT_DIRECTORY) 
-set Rversion = 2.9.0
+set Rversion = 2.10.1
 makensis /V2 /DRVER=$(Rversion) "$(CURRENT_DIRECTORY)\RPortable.nsi"
 mkdir "R-Portable"
 mkdir "R-Portable\App"
-mkdir "R-PortableApp\R-$(Rversion)"
+mkdir "R-Portable\App\R-$(Rversion)"
 mkdir "R-Portable\Data"
 mkdir "R-Portable\Data\library"
 mkdir "R-Portable\Other"
