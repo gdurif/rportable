@@ -1,6 +1,10 @@
 // build.npx
 // Make R-Portable Distribution.
 // NppExec build script.
+//
+// TODO BEFORE RUNNING:
+// update version in the R-portable.ini file
+//
 // REQUIRES:
 // NSIS http://nsis.sf.net
 // NSIS Registry package http://nsis.sourceforge.net/Registry_plug-in

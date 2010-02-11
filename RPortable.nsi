@@ -50,7 +50,7 @@ found a the end of this file or in the accompanying readme.txt.
 ;	!define ADMINREQUIRED 		"TRUE"
 ; Redirect Userprofile folder, comment out when your application calls other
 ; programs, i.e. to disable automatic redirection. Default value "TRUE".
-	!define REDIRECTUSERPROFILE 	"TRUE"
+;	!define REDIRECTUSERPROFILE 	"TRUE"
 ; When "TRUE" a launcher is created that contains the sources and copies them
 ; into the appropriate folder if they do not exist yet.
 ;	!define INSTALLSOURCES 		"TRUE"
