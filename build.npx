@@ -11,7 +11,7 @@
 // NSIS Dialogs http://nsis.sourceforge.net/Dialogs_plug-in
 // NSIS FindProcDLL http://nsis.sourceforge.net/FindProcDLL_plug-in
 cd $(CURRENT_DIRECTORY) 
-set Rversion = 2.10.1
+set Rversion = 2.11.0
 makensis /V2 /DRVER=$(Rversion) "$(CURRENT_DIRECTORY)\RPortable.nsi"
 mkdir "R-Portable"
 mkdir "R-Portable\App"
